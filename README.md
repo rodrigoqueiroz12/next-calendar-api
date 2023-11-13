@@ -36,6 +36,44 @@ To get a local copy up and running follow these simple example steps.
 
 [Click here](https://github.com/rodrigoqueiroz12/next-calendar) to visit the frontend repository
 
+## The API
+
+### `/events`
+
+#### `GET /events`
+
+Return a list of all events
+
+#### `POST /events`
+
+Create an event
+
+```json
+{
+  "title": "New event test",
+  "description": "a new description",
+  "start": "2023-11-12T17:43:34.704Z",
+  "end": "2023-11-12T17:43:34.704Z"
+}
+```
+
+#### `PUT /events/:id`
+
+Update an event
+
+```json
+{
+  "title": "New event test updated",
+  "description": "a new description updated",
+  "start": "2023-11-12T17:43:34.704Z",
+  "end": "2023-12-12T17:43:34.704Z"
+}
+```
+
+#### `DELETE /events/:id`
+
+Delete an event
+
 ## Contact
 
 Rodrigo Queiroz - rodrigo.queiroz0629@gmail.com
